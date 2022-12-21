@@ -1,0 +1,36 @@
+/***** VERSION DESKTOP *****/
+
+.logement_tags {
+    background: #FF6060;
+    border-radius: 10px;
+    color: #F6F6F6;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 68px;
+    text-align: center;
+}
+
+.tags {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/***** VERSION TABLETTE *****/
+
+@media (max-width: 992px) {
+
+    .tags {
+    font-size: 12px;
+    }
+  }
+
+  /***** VERSION MOBILE *****/
+
+@media (max-width: 768px) {
+
+    .tags {
+    font-size: 10px;
+    }
+  }

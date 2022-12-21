@@ -1,0 +1,69 @@
+/***** VERSION DESKTOP *****/
+
+.logement_container {
+    margin: 0 100px;
+    color: #FF6060;
+}
+
+.logement_ads {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.logement_title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.logement_location {
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logement_tags {
+    display: flex;
+}
+
+.logement_rate_host {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+
+.logement_collapses {
+    display: flex;
+}
+
+/***** VERSION TABLETTE *****/
+
+@media (max-width: 992px) {
+
+.logement_title {
+    font-size: 18px;
+}
+
+.logement_location {
+    font-size: 14px;
+}
+}
+
+/***** VERSION MOBILE *****/
+
+@media (max-width: 768px) {
+
+.logement_container {
+    margin: 0px 20px;
+}
+
+.logement_ads {
+    flex-direction: column;
+}
+
+.logement_rate_host {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
