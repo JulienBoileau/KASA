@@ -4,10 +4,11 @@ import { useState } from 'react';
 import arrowDown from "../../assets/ARROW_DOWN.png";
 import arrowUp from "../../assets/ARROW_UP.png";
 
-
-
 export default function Collapse(collapsedata) {
-    const [Closed, setClosed] = useState(true)
+    
+
+  const [Closed, setClosed] = useState(true)
+    
     return Closed ? (
       <div className ="collapse-container">
         <button className ="collapse-button" onClick={() => setClosed(false)}>{collapsedata.name}

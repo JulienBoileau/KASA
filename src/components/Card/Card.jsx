@@ -5,8 +5,12 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Fonction principale pour l'affichage du panel de logements 
+
 export default function Card() {
         const [data, setData] = useState([]);
+
+        // Récupération de la liste des logements avec Axios
 
         useEffect(() => {
             axios.get("http://localhost:3000/logements.json").then((res) => setData(res.data));

@@ -13,18 +13,22 @@ import Error from './Error';
 import Footer from '../components/Footer/Footer';
 import LogementTags from '../components/Logement_tags/Logement_tags';
 
-
+// Fonction principale pour l'affichage du logement sélectionné
 
 export default function Logement() {
         const [data, setData] = useState([]);
         const { logementId } = useParams();
 
+        // Récupération de la liste des logements avec Axios
+
         useEffect(() => {
             axios.get("http://localhost:3000/logements.json").then((res) => setData(res.data));
           }, []);
 
-          const logement = data.find((item) => item.id === logementId);
-          if (!logement) {
+        // On récupére un seul logement à l'aide l'id - Si résultat incorrect renvoi vers la page Error
+
+        const logement = data.find((item) => item.id === logementId);
+            if (!logement) {
             return <Error />;
           }
 
