@@ -13,7 +13,7 @@ export default function Card() {
         // Récupération de la liste des logements avec Axios
 
         useEffect(() => {
-            axios.get("http://localhost:3000/logements.json").then((res) => setData(res.data));
+            axios.get("http://localhost:3000/data/logements.json").then((res) => setData(res.data));
         }, []);
 
         return (

@@ -2,6 +2,7 @@ import React from 'react';
 import BannerAbout from "../components/Banner/Banner_about";
 import Collapse from "../components/Collapse/Collapse";
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 export default function About() {
     return (
@@ -28,6 +29,7 @@ export default function About() {
               />
             </div>
           </main>
+        <Footer />
       </div>
       )
 }

@@ -1,7 +1,5 @@
 import React  from "react";
 import { useState } from "react";
-import leftArrow from "../../assets/LEFT_ARROW.png";
-import rightArrow from "../../assets/RIGHT_ARROW.png";
 import "./_Carrousel.css";
 
 
@@ -44,10 +42,10 @@ export default function Carrousel({ props }) {
         
         <>
           <div className="prev_slide" onClick={prevSlide}>
-            <img src={leftArrow} alt="" className="prev_slide_arrow" />
+            <img src="/assets/LEFT_ARROW.png" alt="" className="prev_slide_arrow" />
           </div>
           <div className="next_slide" onClick={nextSlide}>
-            <img src={rightArrow} alt="" className="next_slide_arrow" />
+            <img src="/assets/RIGHT_ARROW.png" alt="" className="next_slide_arrow" />
           </div>
         </>
 
