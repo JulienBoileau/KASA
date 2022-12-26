@@ -1,9 +1,10 @@
 /***** VERSION DESKTOP *****/
 
-.logement_tags {
+.tags_container {
+    width: 115px;
+    height: 25px;
     background: #FF6060;
-    border-radius: 10px;
-    color: #F6F6F6;
+    border-radius: 15px;
     padding: 5px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -12,6 +13,7 @@
 }
 
 .tags {
+    color: black;
     margin: 0;
     font-size: 14px;
     font-weight: 500;

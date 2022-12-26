@@ -4,7 +4,7 @@ export default function LogementTags({ tag }) {
   
     return (
 
-    <div className="logement_tags">
+    <div className="tags_container">
       <p className="tags">{tag}</p>
     </div>
     
