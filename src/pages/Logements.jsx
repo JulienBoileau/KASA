@@ -1,6 +1,6 @@
 import React from 'react';
-//import axios from 'axios';
 import './_Logements.css';
+import '../components/Logement_tags/_Logement_tags.css';
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
@@ -32,7 +32,7 @@ export default function Logement() {
             }
             setLogement(logement)
           });
-    },); 
+      }, ); 
 
     return (
         
@@ -45,7 +45,7 @@ export default function Logement() {
                                 <h1 className="logement_title">{logement &&  logement.title}</h1>
                                 <p className="logement_location">{logement &&  logement.location}</p>
                                 <div className="logement_tags">
-                                    {logement && logement.tags.map((tag, index) => (<LogementTags key={index} getTag={tag} /> ))}
+                                {logement && logement.tags.map((tag, index) => (<LogementTags key={index} getTag={tag} /> ))}
                                 </div>
                             </div>
                             <div className="logement_rate_host">
