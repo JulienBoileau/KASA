@@ -1,7 +1,9 @@
 /***** VERSION DESKTOP *****/
 
 .logement_container {
-    margin: 0 100px;
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
     color: #FF6060;
 }
 
@@ -30,12 +32,8 @@
 
 .logement_rate_host {
     display: flex;
-    flex-direction: column-reverse;
-    margin: 0;
-}
-
-.logement_collapses {
-    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /***** VERSION TABLETTE *****/
