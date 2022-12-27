@@ -1,0 +1,32 @@
+/***** VERSION DESKTOP *****/
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+  
+.star_item {
+    width: 35px;
+    margin-left: 5px;
+}
+ 
+/***** VERSION TABLETTE *****/
+
+@media (max-width: 992px) {
+
+.star_icon {
+    width: 25px;
+    height: auto;
+}
+}
+
+/***** VERSION MOBILE *****/
+  
+@media (max-width: 768px) {
+        
+.star_icon {
+    width: 15px;
+    height: auto;
+} 
+}
+  
