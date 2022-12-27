@@ -12,14 +12,14 @@ export default function Collapse(collapsedata) {
     return Closed ? (
       <div className ="collapse-container">
         <button className ="collapse-button" onClick={() => setClosed(false)}>{collapsedata.name}
-        <img className="arrowDown" src={arrowDown} alt="Arrow down"></img>
+        <img className="arrowDown" src={arrowDown} alt="flèche vers le bas"></img>
         </button>
       </div>
     ) :
     (
         <div className ="collapse-container">
         <button className ="collapse-button" onClick={() => setClosed(true)}>{collapsedata.name}
-        <img className="arrowUp" src={arrowUp} alt="Arrow up"></img>
+        <img className="arrowUp" src={arrowUp} alt="flèche vers le haut"></img>
         </button>
         <div className="collapse-description">{collapsedata.description}</div>
       </div>
