@@ -31,7 +31,7 @@
     color: #F2F2F2;
 }
 
-.collapse-description {
+.collapse_description {
     font-family: montserrat;
     color: #FF6060;
     size: 24px;
@@ -44,7 +44,7 @@
     z-index: -1;
 }
 
-.collapse-description ul {
+.collapse_description ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -80,7 +80,7 @@
         font-size: 12px;
         height: 35px;
     }
-    .collapse-description {
+    .collapse_description {
         font-size: 11px;
     }
     .arrowDown {
