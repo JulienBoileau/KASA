@@ -54,7 +54,7 @@
 @media (max-width: 768px) {
 
 .logement_container {
-    margin: 0px 20px;
+    margin: auto;
 }
 
 .logement_ads {
@@ -62,7 +62,9 @@
 }
 
 .logement_rate_host {
-    flex-direction: row;
+    margin-top: 10px;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-content: center;
 }
 }
