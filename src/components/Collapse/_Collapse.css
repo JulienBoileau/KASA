@@ -57,6 +57,7 @@
     }
 
     .collapse-container {
+        margin-top: 20px;
         padding: 0;
     }
     .collapse-button {
@@ -64,6 +65,7 @@
         height: 35px;
     }
     .collapse-description {
+        top : -15px;
         font-size: 12px;
     }
     .arrowDown {

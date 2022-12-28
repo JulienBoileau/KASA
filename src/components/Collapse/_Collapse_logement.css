@@ -49,6 +49,14 @@
 
 @media (max-width: 768px) {
 
+    .logement_collapses {
+        flex-direction: column;
+    }
+
+    .collapse_container {
+        width: 100%;
+    }
+
     .banner_about_img img {
         height: 223px;
     }
@@ -57,20 +65,22 @@
         width: 90%;
     }
 
-    .collapse-container {
+    .collapse_container {
         padding: 0;
     }
     .collapse-button {
-        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 12px;
         height: 35px;
     }
     .collapse-description {
-        font-size: 12px;
+        font-size: 11px;
     }
     .arrowDown {
-        height: 20px;
+        height: 10px;
     }
     .arrowUp {
-        height: 20px;
+        height: 10px;
     }
 }
