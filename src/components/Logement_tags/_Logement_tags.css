@@ -1,38 +1,51 @@
 /***** VERSION DESKTOP *****/
 
 .tags_container {
+    display: flex;
     width: 115px;
     height: 25px;
     background: #FF6060;
     border-radius: 15px;
-    padding: 5px 10px;
+    padding: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     min-width: 68px;
+    justify-content: center;
     text-align: center;
 }
 
 .tags {
-    color: black;
-    margin: 0;
+    color: white;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
+    align-self: center;
 }
 
 /***** VERSION TABLETTE *****/
 
 @media (max-width: 992px) {
 
-    .tags {
+  .tags {
     font-size: 12px;
-    }
+  }
   }
 
   /***** VERSION MOBILE *****/
 
 @media (max-width: 768px) {
 
-    .tags {
+  .logement_tags {
+    width: 70%;
+  }
+
+  .tags_container {
+    width: 25%;
+    min-width: 40px;
+    height: 18px;
+    border-radius: 5px;
+  }
+
+  .tags {
     font-size: 10px;
-    }
+  }
   }
