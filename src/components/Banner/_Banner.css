@@ -6,14 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.banner {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
 .banner-container {
+    position: relative;
     display: flex;
+    margin: auto;
     justify-content: center;
     width: 90%;
 }
@@ -33,10 +29,6 @@ body {
     color: white;
 }
 
-.banner_home_img, .banner_about_img {
-    position: relative;
-}
-
 /*****  VERSION TABLETTE *****/
 
 @media (max-width: 992px) {
@@ -51,26 +43,29 @@ body {
 
 @media (max-width: 768px) {
 
-.banner {
-    margin-top: 20px;
-}
-
 .banner_home_img img {
     height: 111px;
     border-radius: 10px;
 }
 
 .banner-container-text {
-    width: 60%;
-    margin-top: 25px;
+    width: 70%;
+    left: 20px;
+    margin-top: 45px;
     font-size: 22px;
 }
+}
+
+@media (max-width: 529px) {
+
+    .banner-container-text {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 374px) {
     
     .banner-container-text {
-        margin-top: 28px;
         font-size: 18px;
     }
 }
