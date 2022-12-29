@@ -81,7 +81,10 @@
         height: 35px;
     }
     .collapse_description {
+        top: -20px;
         font-size: 11px;
+        line-height: 18px;
+        padding: 25px 15px 10px 15px;
     }
     .arrowDown {
         height: 10px;
