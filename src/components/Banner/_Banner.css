@@ -43,6 +43,10 @@ body {
 
 @media (max-width: 768px) {
 
+.banner_home_img {
+    width: 100%;
+}
+
 .banner_home_img img {
     height: 111px;
     border-radius: 10px;
