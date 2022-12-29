@@ -50,6 +50,15 @@
     padding: 0;
 }
 
+/***** VERSION TABLETTE *****/
+
+@media (max-width: 992px) {
+
+.collapse-button {
+    font-size: 16px;
+}
+}
+
 
 /***** VERSION MOBILE *****/
 
