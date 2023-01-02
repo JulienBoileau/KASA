@@ -14,7 +14,7 @@
 
 @media (max-width: 992px) {
 
-.star_icon {
+.star_item {
     width: 25px;
     height: auto;
 }
@@ -24,7 +24,7 @@
   
 @media (max-width: 768px) {
         
-.star_icon {
+.star_item {
     width: 15px;
     height: auto;
 } 

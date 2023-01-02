@@ -21,7 +21,10 @@ export default function Collapse(collapsedata) {
         <button className ="collapse-button" onClick={() => setClosed(true)}>{collapsedata.name}
         <img className="arrowUp" src={arrowUp} alt="flèche vers le haut"></img>
         </button>
-        <div className="collapse-description">{collapsedata.description}</div>
+        {collapsedata.description && <div className="collapse_description">{collapsedata.description}</div>}
+        {collapsedata.list && <div className="collapse_description">
+          <ul>{collapsedata.list}</ul>
+          </div>}
       </div>
     )
 }

@@ -4,6 +4,7 @@
     width: 75%;
     max-width: 1050px;
     margin: auto;
+    margin-top: 5px;
 }
 
 .collapse-container {
@@ -36,7 +37,7 @@
     size: 24px;
     background: #F2F2F2;
     border-radius: 0px 0px 5px 5px;
-    padding: 15px 10px 5px 10px;
+    padding: 15px 25px 5px 18px;
     list-style-type: none;
     position: relative;
     top: -5px;
@@ -57,6 +58,7 @@
     }
 
     .collapse-container {
+        margin-top: 20px;
         padding: 0;
     }
     .collapse-button {
@@ -64,7 +66,9 @@
         height: 35px;
     }
     .collapse-description {
+        top : -20px;
         font-size: 12px;
+        padding: 10px 5px 35px 12px;
     }
     .arrowDown {
         height: 20px;

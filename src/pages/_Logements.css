@@ -10,7 +10,6 @@
 .logement_ads {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -18,16 +17,18 @@
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 0;
-    line-height: 25px;
+    line-height: 40px;
 }
 
 .logement_location {
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 500;
 }
 
 .logement_tags {
     display: flex;
+    margin-top: 25px;
 }
 
 .logement_rate_host {
@@ -42,6 +43,7 @@
 
 .logement_title {
     font-size: 18px;
+    line-height: 25px;
 }
 
 .logement_location {
@@ -54,15 +56,27 @@
 @media (max-width: 768px) {
 
 .logement_container {
-    margin: 0px 20px;
+    margin: auto;
 }
 
 .logement_ads {
     flex-direction: column;
 }
 
+.tags_container p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logement_tags {
+    margin-top: 5px;
+}
+
 .logement_rate_host {
-    flex-direction: row;
+    margin-top: 10px;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-content: center;
 }
 }

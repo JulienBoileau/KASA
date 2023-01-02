@@ -7,21 +7,21 @@ import arrowUp from "../../assets/ARROW_UP.png";
 export default function Collapse(collapsedata) {
     
 
-  const [Closed, setClosed] = useState(true)
-    
-    return Closed ? (
-      <div className ="collapse-container">
-        <button className ="collapse-button" onClick={() => setClosed(false)}>{collapsedata.name}
-        <img className="arrowDown" src={arrowDown} alt="flèche vers le bas"></img>
-        </button>
-      </div>
-    ) :
-    (
-        <div className ="collapse-container">
-        <button className ="collapse-button" onClick={() => setClosed(true)}>{collapsedata.name}
-        <img className="arrowUp" src={arrowUp} alt="flèche vers le haut"></img>
-        </button>
-        <div className="collapse-description">{collapsedata.description}</div>
-      </div>
-    )
+  const [closed, setClosed] = useState(true)
+
+  const toogleDisplay = () => {
+    setClosed(!closed);
+  }
+  
+  return (
+    <div className='collapse-container'>
+      <button className='collapse-button' onClick={() => toogleDisplay()}>{collapsedata.name}
+      <img className={closed? 'arrowDown':'arrowUp'} src={closed? arrowDown:arrowUp} alt='flèche'></img>
+      </button>
+      {!closed && (<div className='collapse-description'>{collapsedata.description}</div>)}
+    </div>
+  )
 }
+
+
+

@@ -31,23 +31,46 @@
     color: #F2F2F2;
 }
 
-.collapse-description {
+.collapse_description {
     font-family: montserrat;
     color: #FF6060;
     size: 24px;
     background: #F2F2F2;
     border-radius: 0px 0px 5px 5px;
-    padding: 15px 10px 5px 10px;
-    list-style-type: none;
+    padding: 40px 0px 40px 20px;
+    line-height: 25px;
     position: relative;
     top: -5px;
     z-index: -1;
+}
+
+.collapse_description ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/***** VERSION TABLETTE *****/
+
+@media (max-width: 992px) {
+
+.collapse-button {
+    font-size: 16px;
+}
 }
 
 
 /***** VERSION MOBILE *****/
 
 @media (max-width: 768px) {
+
+    .logement_collapses {
+        flex-direction: column;
+    }
+
+    .collapse_container {
+        width: 100%;
+    }
 
     .banner_about_img img {
         height: 223px;
@@ -57,20 +80,25 @@
         width: 90%;
     }
 
-    .collapse-container {
+    .collapse_container {
         padding: 0;
     }
     .collapse-button {
-        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 12px;
         height: 35px;
     }
-    .collapse-description {
-        font-size: 12px;
+    .collapse_description {
+        top: -20px;
+        font-size: 11px;
+        line-height: 18px;
+        padding: 25px 15px 10px 15px;
     }
     .arrowDown {
-        height: 20px;
+        height: 10px;
     }
     .arrowUp {
-        height: 20px;
+        height: 10px;
     }
 }

@@ -45,9 +45,18 @@
 
     .logement_picture {
         height: 250px;
-    }    
+    }   
+    
+    .prev_slide_arrow {
+        margin-left: 10px;
+    }
+    
+    .next_slide_arrow {
+        margin-right: 10px;
+    }
 
     .prev_slide_arrow, .next_slide_arrow {
+        margin-top: 30px;
         height: 30px;
     }
     
@@ -58,7 +67,7 @@
 @media (max-width: 768px) {
 
     .logement_picture {
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
     .prev_slide_arrow, .next_slide_arrow {

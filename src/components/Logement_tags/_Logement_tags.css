@@ -25,16 +25,27 @@
 
 @media (max-width: 992px) {
 
-    .tags {
+  .tags {
     font-size: 12px;
-    }
+  }
   }
 
   /***** VERSION MOBILE *****/
 
 @media (max-width: 768px) {
 
-    .tags {
+  .logement_tags {
+    width: 70%;
+  }
+
+  .tags_container {
+    width: 25%;
+    min-width: 40px;
+    height: 18px;
+    border-radius: 5px;
+  }
+
+  .tags {
     font-size: 10px;
-    }
+  }
   }
