@@ -21,7 +21,7 @@ export default function Collapse(collapsedata) {
       {!closed && (<div className='collapse-description'>{collapsedata.description}</div>)}
     </div>
   )
-}
+  }
 
 
 

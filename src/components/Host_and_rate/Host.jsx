@@ -1,6 +1,6 @@
 import "./_Host.css";
 
-function LogementHost({ host }) {
+export default function LogementHost({ host }) {
     
     const hostSplitName = host.name.split(" ");
     const [name, lastname] = hostSplitName;
@@ -20,4 +20,3 @@ function LogementHost({ host }) {
   );
 }
 
-export default LogementHost;
