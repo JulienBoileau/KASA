@@ -1,15 +1,15 @@
 import React from "react";
 import './_Banner.css';
 
-export default function BannerHome() {
+export default function Banner({ img, text }) { 
     return (
         <div>
         <section className="banner">
             <div className="banner-container">
                 <div className="banner_home_img">
-                    <img src="/assets/BANNER_HOME.png" alt='banniere_kasa'/>
+                    <img src={img} alt='banniere_kasa'/>
                 </div>
-                <div className="banner-container-text">Chez vous, partout et ailleurs</div>
+                { text && <div className="banner-container-text">{ text }</div>}
             </div>
         </section>
         </div>

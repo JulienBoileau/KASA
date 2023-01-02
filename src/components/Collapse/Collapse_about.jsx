@@ -1,5 +1,5 @@
 import React from 'react';
-import "./_Collapse.css";
+import "./_Collapse_about.css";
 import { useState } from 'react';
 import arrowDown from "../../assets/ARROW_DOWN.png";
 import arrowUp from "../../assets/ARROW_UP.png";
@@ -22,6 +22,3 @@ export default function Collapse(collapsedata) {
     </div>
   )
   }
-
-
-

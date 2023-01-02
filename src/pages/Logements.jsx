@@ -7,8 +7,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Carrousel from '../components/Carrousel/Carrousel';
 import Collapse from '../components/Collapse/Collapse_logement';
-import Host from '../components/Host_and_rate/Host';
-import Rate from '../components/Host_and_rate/Rate';
+import Host from '../components/Host/Host';
+import Rate from '../components/Rate/Rate';
 //import Error from './Error';
 import Footer from '../components/Footer/Footer';
 import LogementTags from '../components/Logement_tags/Logement_tags';
@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 export default function Logement() {
 
     const [logement, setLogement] = useState();
-    const params = useParams()
+    const params = useParams();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function Logement() {
             }
             setLogement(logement)
           });
-      }, []); 
+      }, [navigate, params]); 
 
     return (
         
@@ -57,8 +57,8 @@ export default function Logement() {
                             </div>
                         </div>
                         <div className="logement_collapses">
-                            <Collapse title="description" name="Description" description={logement && logement.description} />
-                            <Collapse title="equipements" name="Equipements" list={logement && (logement.equipments).map((equipment, index) => (
+                            <Collapse type="column" title="description" name="Description" description={logement && logement.description} />
+                            <Collapse type="column"  title="equipements" name="Equipements" list={logement && (logement.equipments).map((equipment, index) => (
                               <li className="equipements_liste" key={index}>{equipment}</li>))}/>
                         </div>
                 </section>
